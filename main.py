@@ -1,12 +1,13 @@
 import letters as l
 import datetime as dt
+import subprocess as sp
 
 message = "hire me"
 
 # preprocessing for determining pixel
 today = dt.date.today()
 startdate = dt.date(2018, 4, 21)    # Set this to the sunday you'd like to start on
-                                    # (Github starts on Sunday)
+                                    # (Github week starts Sunday)
 daysrunning = (today - startdate).days
 
 # Do the junk
@@ -30,6 +31,8 @@ def main():
 
     if currpixel:
         print("COMMIT")
+        sp.call("phoneycommit.sh"); 
+        
     else:
         print("DON'T COMMIT")
 
