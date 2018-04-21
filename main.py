@@ -31,7 +31,6 @@ def main():
 
     if currpixel:
         print("COMMIT")
-        sp.call("phoneycommit.sh"); 
         
     else:
         print("DON'T COMMIT")
@@ -39,5 +38,7 @@ def main():
     return
 
 
-main()
+sp.call("./phoneycommit.sh"); 
+
+#main()
 

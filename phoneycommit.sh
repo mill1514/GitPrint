@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Add a random number to a text file
 echo $RANDOM > dumbo.txt 
 git add *
