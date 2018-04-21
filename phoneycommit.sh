@@ -2,4 +2,4 @@
 echo $RANDOM > dumbo.txt 
 git add *
 git commit -m "GitPrint is in full swing"
-git push
+echo ../gitcred.txt > git push
