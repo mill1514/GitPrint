@@ -1,6 +1,7 @@
 import letters as l
 import datetime as dt
 import subprocess as sp
+import os
 
 message = "hire me"
 
@@ -31,9 +32,10 @@ def main():
 
     if currpixel:
         print("COMMIT")
-        sp.call("./phoneycommit.sh"); 
-        sp.call("./phoneycommit.sh"); 
-        sp.call("./phoneycommit.sh"); 
+        os.chdir("./GitPrint")
+        sp.call("./phoneycommit.sh")
+        sp.call("./phoneycommit.sh")
+        sp.call("./phoneycommit.sh")
         
     else:
         print("DON'T COMMIT")
