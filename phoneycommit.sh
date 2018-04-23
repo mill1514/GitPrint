@@ -3,7 +3,7 @@
 # Add a random number to a text file
 echo "\n Original Dumbo:\n"
 cat dumbo.txt
-echo $RANDOM > dumbo.txt 
+date +%s%N > dumbo.txt 
 
 echo "\nNew Dumbo:\n"
 cat dumbo.txt
