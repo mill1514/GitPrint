@@ -6,7 +6,7 @@ message = "hire me"
 
 # preprocessing for determining pixel
 today = dt.date.today()
-startdate = dt.date(2018, 4, 21)    # Set this to the sunday you'd like to start on
+startdate = dt.date(2018, 4, 15)    # Set this to the sunday you'd like to start on
                                     # (Github week starts Sunday)
 daysrunning = (today - startdate).days
 
@@ -31,14 +31,13 @@ def main():
 
     if currpixel:
         print("COMMIT")
+        sp.call("./phoneycommit.sh"); 
+        sp.call("./phoneycommit.sh"); 
+        sp.call("./phoneycommit.sh"); 
         
     else:
         print("DON'T COMMIT")
 
     return
 
-
-sp.call("./phoneycommit.sh"); 
-
-#main()
-
+main()
