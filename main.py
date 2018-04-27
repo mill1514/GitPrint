@@ -3,7 +3,7 @@ import datetime as dt
 import subprocess as sp
 import os
 
-message = "hire me"
+message = "hello"
 
 # preprocessing for determining pixel
 today = dt.date.today()
